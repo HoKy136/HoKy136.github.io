@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+}
+
+#myBtn{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    position: fixed;
+    right: 10px;
+    
+}
+.menuHeader ul{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuHeader ul li:nth-child(2) a{
+    color: purple;
+    font-size: 30px;
+}
+.menuHeader ul li:nth-child(2) a:hover{
+    opacity: 0.5; 
+}
+.menuHeader ul li:nth-child(3) {
+    position: relative;
+    
+}
+.menuHeader ul li:nth-child(3) i{
+    position: absolute;
+    cursor: pointer;
+    line-height: 40px;
+    left: 5px;
+
+}
+.menuHeader ul li:nth-child(3) input{
+    border-radius: 3px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+.menuHeader ul li:nth-child(4) a{
+    color: green;
+}
+.menuHeader ul li:nth-child(4) i{
+    color: green;
+}
+
+.menuItems{
+    margin-top: 30px;
+  
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+}
+.menuItems a img{
+    width: 400px;
+    height: 200px;
+}
+.menuItems a:hover{
+    border: 1px solid black;
+}
+.menuItems a span{
+    color: black;
+    font-size: 20px;
+    
+}
+.container-item1{
+    margin-bottom: 50px;
+}
+.container-item{
+    margin-bottom: 50px;
+}
+.bar-footer{
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+   
+}
+
+
+
+#result-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.line-result {
+    margin-left:385px;
+    width: 300px;
+    height: 40px;
+    transition: 0.2s;
+    padding: 10px;
+    background-color: rgb(223, 239, 239);
+    border-bottom: 1px solid #ddd;
+}
+
+.line-result:hover {
+    background-color: lightblue;
+}
+
+/* //////////// CSS Item ///////////// */
+
+.container-item1{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+.container-item{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+
+.descr-item p:nth-child(3) {
+    color: green;
+}
+.descr-item button{
+    background-color:  #934398;
+    color: white;
+    width: 130px;
+}
+
+.btn_dropdown {
+    background-color: #934398;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+ /* Thiết lập vị trí cho thẻ div với class dropdown*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+ /* Nội dung Dropdown */
+  .noti_dropdown {
+    /*Ẩn nội dụng các đường dẫn*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+ /* Thiết kế style cho các đường dẫn tronng Dropdown */
+  .noti_dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .index_dropdown{
+    display:block;
+  }
+
+.noti_dropdown a:hover{
+    background-color: #934398;
+}
+
+.bar-contact{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.about-menu li a{
+    color: black
+}
+.about-menu li a:hover{
+    color:  #934398
+}
+
+.contact-menu li:nth-child(2) button{
+    background-color: #934398;
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.gioHang button{
+    
+    height: 80px;
+    width: 80px;
+    float: right;
+    margin-right: 5px;
+    color: #934398;
+    background-color: yellow;
+    border-radius: 35px;
+}
+.gioHang button span{
+    font-weight: bold;
+    font-size: 2vw;
+    color: #934398;
+    height: 40px;
+    line-height: 40px;
+}
+#showCart{
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 150px;
+    background-image: linear-gradient(yellow , white);
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+}
+#showCart table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+footer img {
+    margin-left: 50px;
+    max-width: 100%;
+}
+#showCount{
+    color: #934398;
+}
+                             /* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .menuHeader{
+        height: 200px;
+    }
+    .menuHeader ul{
+        
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    .bar-footer{
+        margin-top: 100px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+       
+    }
+    #showCart{
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 230px;
+    background-image: linear-gradient(yellow , white);
+   
+    
+    height: 250px;
+    overflow: auto;
+}
+#showCart table {
+    width: 100%;
+    table-layout: fixed;
+}
+.container-item{
+    display: flex;
+   flex-wrap:wrap-reverse;
+   margin-left: 0;
+   margin-bottom: 0;
+   
+    
+}
+.container-item img{
+    width: 350px;
+    
+}
+
+.gioHang{
+    display: none;
+}
+
+.container{
+    overflow-x: auto;
+}
+footer img {
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.line-result {
+    margin-right:355px;
+    margin-top: 55px;
+    width: 300px;
+    height: 40px;
+    transition: 0.2s;
+    padding: 10px;
+    background-color: rgb(223, 239, 239);
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.noti_dropdown a {
+    color: black;
+    font-size: 13px;
+    padding: 12px 16px;
+    width: auto;
+    text-decoration: none;
+    display: inline;
+  }
+
+} 
